@@ -5,10 +5,13 @@ FastAPI backend for Novel Writing Agent
 import traceback
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from novel_agent import generate_outline, generate_chapter, regenerate_chapter
 
 app = FastAPI(title="Novel Writing Agent API")
+
+app.mount("/", StaticFiles(directory="dist", html=True), name="static")
 
 app.add_middleware(
     CORSMiddleware,
