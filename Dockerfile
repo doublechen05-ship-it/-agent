@@ -3,7 +3,7 @@ WORKDIR /app/frontend
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ ./
-RUN chmod +x node_modules/.bin/vite && node node_modules/.bin/vite build
+RUN node ./node_modules/vite/bin/vite.js build
 
 FROM python:3.11-slim as backend
 WORKDIR /app
