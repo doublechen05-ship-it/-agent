@@ -1,9 +1,9 @@
 FROM node:18 as frontend-build
 WORKDIR /app/frontend
 COPY frontend/package*.json ./
-RUN npm install && npm cache clean --force
+RUN npm install
 COPY frontend/ ./
-RUN npx vite build
+RUN chmod +x node_modules/.bin/vite && node node_modules/.bin/vite build
 
 FROM python:3.11-slim as backend
 WORKDIR /app
