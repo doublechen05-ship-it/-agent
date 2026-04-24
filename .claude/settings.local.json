@@ -5,7 +5,9 @@
       "WebSearch",
       "Bash(pip install *)",
       "Bash(python -c ' *)",
-      "Bash(python \"D:\\\\OneDrive\\\\桌面\\\\create_docx.py\")"
+      "Bash(python \"D:\\\\OneDrive\\\\桌面\\\\create_docx.py\")",
+      "Bash(git commit *)",
+      "Bash(git add *)"
     ]
   }
 }
