@@ -7,7 +7,8 @@
       "Bash(python -c ' *)",
       "Bash(python \"D:\\\\OneDrive\\\\桌面\\\\create_docx.py\")",
       "Bash(git commit *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git push *)"
     ]
   }
 }
